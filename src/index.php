@@ -21,7 +21,7 @@ $app = new Slim(array(
  * The / endpoint. This is where the homepage lives.
  */
 $app->get('/', function () use ($app) {
-	$message = array('title' => "Today's insult");
+	$message = array('title' => "Insult of the year");
 	$app->render('index.tpl', $message);
 });
 
